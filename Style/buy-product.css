@@ -1,0 +1,103 @@
+.pretable{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtitle{
+    display: flex;
+    height: 50px;
+    font-size: 15pt;
+    font-weight: 400;
+    align-items: center;
+}
+.btn-aceptar{
+    height: 40px;
+    align-self: center;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+    color: white;
+    background-color: #579dee;
+}
+
+.btn-aceptar:hover{
+    background-color: #37B839;	
+}
+
+.nav-cont{
+    display: flex;
+}
+
+.page{
+    width: 100%;
+    padding: 20px;
+}
+
+.modal-contenido{
+    background-color:rgb(87, 90, 226);
+    width: 80vw;
+    height: 90vh;
+    padding: 10px 20px;
+    margin: 5% auto;
+    position: relative;
+}
+.modal{
+    background-color: rgba(197, 197, 238, 0.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+}
+
+#miModal:target{
+    opacity:1;
+    pointer-events:auto;
+}
+
+.form-title{
+    width: 100%;
+}
+.cont-title-char-type-1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.title-char-type-1{
+    font-size: 16pt;
+}
+.place{
+    margin: 0px;
+}
+.autoscroll{
+    overflow-y: auto;
+}
+.size-table-modal{
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+
+    .title-char-type-1{
+        display: flex;
+        font-size: 24pt;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .page{
+        width: calc(100vw - 260px);
+    }
+    .title-char-type-1{
+        font-size: 36pt;
+        
+    }
+}
+

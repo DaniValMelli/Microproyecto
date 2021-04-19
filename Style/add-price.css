@@ -1,0 +1,20 @@
+.btns{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;   
+}
+
+.cliente{
+        padding: 0px 15px;
+        margin-bottom: 15px;
+}
+@media only screen and (min-width: 992px) {
+        .cliente{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        .form-cont-input{
+                width: 48%;
+        }
+}

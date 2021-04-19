@@ -1,0 +1,37 @@
+.valor{
+    width: calc(100% - 30px);
+}
+.flex-valor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-name{
+    width: 100%;
+}
+.butoms-form{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+@media only screen and (min-width: 992px) {
+
+    .form-cont-input{
+        width: 48%;
+    }
+    .form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form-title{
+        width: 100%;
+    }
+    .img-add{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos ACME S.A.S</title>
+    <link rel="stylesheet" href="Style/Componentes.css">
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/add-product.css">
+
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="title"> <span class="material-icons">reorder </span> ACME S.A.S</div>
+        <div class="user"><span class="material-icons user-size">account_circle </span></div>
+    </header>
+
+    <div class="cont-body">
+
+        <nav>
+            <div class="homepage nav-item" onclick="window.location.href='HomePage.html'"><span class="material-icons"> home </span> <p>Homepage</p> <span class="material-icons">arrow_right</span></div>
+
+            <div class="productos nav-item"> <span class="material-icons">widgets</span> <p>Productos</p><span class="material-icons arrow">expand_more</span></div>     
+                <div class="subitems nav-item" onclick="window.location.href='add-product.html'">Agregar productos <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='buy-product.html'">Comprar productos <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='GestionProductos.html'">Gestión productos <span class="material-icons">arrow_right</span></div>
+
+            <div class="cotizaciones nav-item"> <span class="material-icons">local_atm </span> <p>Cotizaciones</p>  <span class="material-icons arrow">expand_less</span> </div> 
+                <div class="subitems nav-item" onclick="window.location.href='List-price.html'">Lista de cotizaciones <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='add-price.html'">Agregar cotización <span class="material-icons">arrow_right</span></div>
+
+            <div class="ordenes nav-item"> <span class="material-icons">receipt_long</span> <p>Ordenes de Trabajo</p> <span class="material-icons arrow">expand_more</span> </div>
+                <div class="subitems nav-item" onclick="window.location.href='List-work.html'">Lista ordenes de trabajo <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='add-work.html'">Agregar ordenes de trabajo <span class="material-icons">arrow_right</span></div>
+
+            <div class="gestionUser nav-item" onclick="window.location.href='GestionUsuarios.html'"><span class="material-icons" >people_alt</span> <p>Gestión de Usuarios</p> <span class="material-icons arrow">arrow_right</span> </div>
+
+            <div class="reportes nav-item"> <span class="material-icons">stacked_bar_chart</span> <p>Reportes</p> <span class="material-icons arrow">expand_more</span> </div>      
+                <div class="subitems nav-item" onclick="window.location.href='ReportesInventario.html'">Inventario <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='ReportesOrdenesTrabajo.html'">Ordenes de trabajo <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='ReportesComprasVentas.html'">Ventas y compras<span class="material-icons">arrow_right</span></div>
+        </nav>
+    
+        <aside>
+            <div class="page-title"><span class="material-icons"> inventory_2 </span> - Agregar productos</div>
+
+            <div class="row">
+                <form class="form" action="">
+    
+                    <!-- titulo -->
+                    <p class="form-title">Ingresar datos producto nuevo</p>
+
+                        <!-- Entrada de numero -->
+                        <div class="form-cont-input ">
+                            <p class="form-name">Código</p>
+                            <input class="form-input" type="number" value="0" required>
+                        </div>
+        
+                    <!-- Entrada de texto -->
+                    <div class="form-cont-input ">
+                        <p class="form-name">Nombre</p>
+                        <input class="form-input" type="text" placeholder="ingrese nombre" required>
+                    </div>
+        
+                    <!-- Entrada de select -->
+                    <div class="form-cont-input ">
+                        <p class="form-name">Categoria</p>
+                        <select class="form-input" placeholder="Por defecto" required>
+                            <option value="Opcion1">Seleccione</option>
+                            <option value="Opcion2">Opcion2</option>
+                            <option value="Opcion3">Opcion3</option>
+                            <option value="Opcion4">Opcion4</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Selección radius-->
+                    <div class="form-cont-input">
+                        <p class="form-name">Ubicación</p>
+                        <p>
+                            <label class="custom-radio-checkbox">
+                                <!-- Input oculto -->
+                                <input class="custom-radio-checkbox__input" type="radio" name="genero" value="mujer" checked>
+                                <!-- Imagen en sustitucion -->
+                                <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+                                <!-- Texto -->
+                                <span class="custom-radio-checkbox__text">Mujer</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label class="custom-radio-checkbox">
+                                <!-- Input oculto -->
+                                <input class="custom-radio-checkbox__input" type="radio" name="genero" value="hombre">
+                                <!-- Imagen en sustitucion -->
+                                <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+                                <!-- Texto -->
+                                <span class="custom-radio-checkbox__text">Hombre</span>
+                            </label>
+                        </p>
+                    </div>
+
+                    <!-- Entrada de texto -->
+                    <div class="form-cont-input ">
+                        <p class="form-name">Descripción</p>
+                        <textarea class="form-input box-des-six"  placeholder="ingrese nombre" required> </textarea>
+                    </div>
+
+                    <!-- Entrada de numero -->
+                    <div class="form-cont-input flex-valor">
+                        <p class="form-name">Precio de entrada</p>
+                        <span class="material-icons">attach_money</span><input class="form-input valor" type="number" min="0" max="100" value="0" required>
+                    </div>
+                    <!-- Entrada de numero -->
+                    <div class="form-cont-input flex-valor">
+                        <p class="form-name">Precio de salida</p>
+                        <span class="material-icons">attach_money</span><input class="form-input valor" type="number" min="0" max="100" value="0" required>
+                    </div>
+
+                    <!-- Entrada de numero -->
+                    <div class="form-cont-input ">
+                        <p class="form-name">Unidad</p>
+                        <input class="form-input" type="number" min="0" value="0" required>
+                    </div>
+
+                    <!-- Entrada de select -->
+                    <div class="form-cont-input ">
+                        <p class="form-name">Presentación</p>
+                        <select class="form-input" placeholder="Por defecto" required>
+                            <option value="Opcion1">Seleccione</option>
+                            <option value="Opcion2">Opcion2</option>
+                            <option value="Opcion3">Opcion3</option>
+                            <option value="Opcion4">Opcion4</option>
+                        </select>
+                    </div>
+                    <!-- Cantidades -->
+                    <div class="form-cont-input ">
+                        <p class="form-name">Cantidad incial en inventario</p>
+                        <input class="form-input" type="number" min="0" value="0" required>
+                    </div>
+                    <div class="form-cont-input ">
+                        <p class="form-name">Cantidad final en inventario</p>
+                        <input class="form-input" type="number" min="0" value="0" required>
+                    </div>
+
+                    <div class="img-add">
+                    <img src="Imagenes/Transistor.png"  width="100" height="70">
+                    </div>
+                    <!-- Botones -->
+                    <div class="butoms-form">
+                        <a href="#" class="btn btn-aceptar">Aceptar</a>
+                        <a href="#" class="btn btn-cancelar">Cancelar</a>
+                    </div>
+
+                </form>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</body>
+</html>

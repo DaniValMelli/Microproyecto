@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos ACME S.A.S</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/Componentes.css">
+    <link rel= 'stylesheet' href='Style/index.css'>
+    <link rel= 'stylesheet' href='Style/buy-product.css'>
+
+</head>
+<body>
+
+    <header>
+        <div class="title"> <span class="material-icons">reorder </span> ACME S.A.S</div>
+        <div class="user"><span class="material-icons user-size">account_circle </span> </div>
+    </header>
+
+    <div class="cont-body">
+
+        <nav>
+            <div class="homepage nav-item" onclick="window.location.href='HomePage.html'"><span class="material-icons"> home </span> <p>Homepage</p> <span class="material-icons">arrow_right</span></div>
+
+            <div class="productos nav-item"> <span class="material-icons">widgets</span> <p>Productos</p><span class="material-icons arrow">expand_more</span></div>     
+                <div class="subitems nav-item" onclick="window.location.href='add-product.html'">Agregar productos <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='buy-product.html'">Comprar productos <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='GestionProductos.html'">Gestión productos <span class="material-icons">arrow_right</span></div>
+
+            <div class="cotizaciones nav-item"> <span class="material-icons">local_atm </span> <p>Cotizaciones</p>  <span class="material-icons arrow">expand_less</span> </div> 
+                <div class="subitems nav-item" onclick="window.location.href='List-price.html'">Lista de cotizaciones <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='add-price.html'">Agregar cotización <span class="material-icons">arrow_right</span></div>
+
+            <div class="ordenes nav-item"> <span class="material-icons">receipt_long</span> <p>Ordenes de Trabajo</p> <span class="material-icons arrow">expand_more</span> </div>
+                <div class="subitems nav-item" onclick="window.location.href='List-work.html'">Lista ordenes de trabajo <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='add-work.html'">Agregar ordenes de trabajo <span class="material-icons">arrow_right</span></div>
+
+            <div class="gestionUser nav-item" onclick="window.location.href='GestionUsuarios.html'"><span class="material-icons" >people_alt</span> <p>Gestión de Usuarios</p> <span class="material-icons arrow">arrow_right</span> </div>
+
+            <div class="reportes nav-item"> <span class="material-icons">stacked_bar_chart</span> <p>Reportes</p> <span class="material-icons arrow">expand_more</span> </div>      
+                <div class="subitems nav-item" onclick="window.location.href='ReportesInventario.html'">Inventario <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='ReportesOrdenesTrabajo.html'">Ordenes de trabajo <span class="material-icons">arrow_right</span></div>
+                <div class="subitems nav-item" onclick="window.location.href='ReportesComprasVentas.html'">Ventas y compras<span class="material-icons">arrow_right</span></div>
+        </nav> 
+        
+        <aside> 
+            <div class="page-title"><span class="material-icons">shopping_cart</span> - Compra de productos</div>
+            
+            <div class="row"> <!-- table-type-2 -->
+                <div class="char">
+                    <div class="pretable">
+                        <p class="subtitle">Productos agregados</p>
+                        <a href="#miModal" class="btn-aceptar">Agregar</a>
+
+                        <div id="miModal" class="modal">
+                            <div class="modal-contenido autoscroll">
+                                <a href="#"><span class="material-icons">close</span></a>
+                                <div class="row"> <!-- char-type-1 -->
+                                    <div class="cont-char-type-1">
+                                        <div class="char">
+                                            <div class="header-char-type-1">
+                                                    <div class="icon-char-type-1 modificador-color-icon">
+                                                    <span class="material-icons place">shopping_cart</span>
+                                                    </div>
+                                                    <!-- titulo -->
+                                                    <div class="cont-title-char-type-1">
+                                                        <p class="title-char-type-1">Compra de productos</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="body-char-type-1">
+                                                <!-- Form -->
+                                                <form class="form" action="">                                              
+                                                    <!-- Entrada de select -->
+                                                    <div class="form-cont-input ">
+                                                        <p class="form-name">Cátalogo</p>
+                                                        <select class="form-input" placeholder="selecciona" required>
+                                                            <option value="Opcion1">selecciona</option>
+                                                            <option value="Opcion2">Opcion2</option>
+                                                            <option value="Opcion3">Opcion3</option>
+                                                            <option value="Opcion4">Opcion4</option>
+                                                        </select>
+                                                    </div>
+                                                        <!-- Entrada de select -->
+                                                        <div class="form-cont-input ">
+                                                            <p class="form-name">Producto</p>
+                                                            <select class="form-input" placeholder="selecciona" required>
+                                                                <option value="Opcion1">selecciona</option>
+                                                                <option value="Opcion2">Opcion2</option>
+                                                                <option value="Opcion3">Opcion3</option>
+                                                                <option value="Opcion4">Opcion4</option>
+                                                            </select>
+                                                        </div>
+
+                                                    <!-- Entrada de numero -->
+                                                    <div class="form-cont-input">
+                                                        <p class="form-name">Cantidad</p>
+                                                        <input class="form-input" type="number" min="0" max="100" value="0" required>
+                                                    </div>
+
+                                                    <p class="form-name">Resultado</p>
+                                                    <!-- Este es el codigo de la tabla -->
+                                                    <div class="cont-table-type-2 size-table-modal">
+                                                        <table class="table-type-2">
+                                                            <thead class="table-type-2-head">
+                                                                <tr>
+                                                                    <!-- img-name-catalogo de producto -->
+                                                                    <td class="table-type-2-head-td">Producto</td>
+
+                                                                    <!-- Cantidad -->
+                                                                    <td class="table-type-2-head-td">Cantidad</td>
+
+                                                                    <!-- precio -->
+                                                                    <td class="table-type-2-head-td">Precio</td>
+
+                                                                    <!-- opciones -->
+                                                                    <td class="table-type-2-head-td"><span class="material-icons">more_horiz</span></td>
+                                                                
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="table-type-2-body">
+                                                                <tr class="table-type-2-body-tr">
+
+                                                                    <!-- img-name-catalogo de producto -->
+                                                                    <td class="table-type-2-body-td">
+                                                                        <div class="table-type-2-cont-producto">
+                                                                            <img class="table-type-2-producto-img" src="Imagenes/Condensador.jpg" alt="...">
+                                                                            <div class="table-type-2-productos-cont-text">
+                                                                                <p class="table-type-2-producto-name">Name producto</p>
+                                                                                <p class="table-type-2-producto-catalogo">Catalogo</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+
+                                                                    <!-- cantidad -->
+                                                                    <td class="table-type-2-body-td">
+                                                                        <div class="table-type-2-cantidad">
+                                                                            10
+                                                                        </div>
+                                                                    </td>
+
+                                                                    <!-- precio -->
+                                                                    <td class="table-type-2-body-td">
+                                                                        <div class="table-type-2-precio-cont-text">
+                                                                            <p class="table-type-2-precio-total">Precio total</p>
+                                                                            <p class="table-type-2-precio-unitario">Precio Unitario</p>
+                                                                        </div>
+                                                                    </td>
+
+                                                                    <!-- Opciones -->
+                                                                    <td class="table-type-2-body-td ">
+                                                                        <div class="table-type-2-cont-opcion">
+                                                                            <div class="table-type-2-cont-opcion-reed">
+                                                                            <div class="table-type-2-cont-opcion-delete">
+                                                                                <div class="table-type-2-opcions-delete"><span class="material-icons">delete</span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    <!-- Botones aceptar y cancelar -->
+                                                    <div class="btns">
+                                                        <a href="#" class="btn btn-aceptar">Aceptar</a>
+                                                        <a href="#" class="btn btn-cancelar">Cancelar</a>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                    
+
+                    <!-- Este es el codigo de la tabla -->
+                    <div class="cont-table-type-2">
+                        <table class="table-type-2">
+                            <thead class="table-type-2-head">
+                                <tr>
+                                    <!-- img-name-catalogo de producto -->
+                                    <td class="table-type-2-head-td">Producto</td>
+
+                                    <!-- Cantidad -->
+                                    <td class="table-type-2-head-td">Cantidad</td>
+
+                                    <!-- precio -->
+                                    <td class="table-type-2-head-td">Precio</td>
+
+                                    <!-- opciones -->
+                                    <td class="table-type-2-head-td"><span class="material-icons">more_horiz</span></td>
+                                
+                                </tr>
+                            </thead>
+                            <tbody class="table-type-2-body">
+                                <tr class="table-type-2-body-tr">
+
+                                    <!-- img-name-catalogo de producto -->
+                                    <td class="table-type-2-body-td">
+                                        <div class="table-type-2-cont-producto">
+                                            <img class="table-type-2-producto-img" src="Imagenes/Condensador.jpg" alt="...">
+                                            <div class="table-type-2-productos-cont-text">
+                                                <p class="table-type-2-producto-name">Name producto</p>
+                                                <p class="table-type-2-producto-catalogo">Catalogo</p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <!-- cantidad -->
+                                    <td class="table-type-2-body-td">
+                                        <div class="table-type-2-cantidad">
+                                            10
+                                        </div>
+                                    </td>
+
+                                    <!-- precio -->
+                                    <td class="table-type-2-body-td">
+                                        <div class="table-type-2-precio-cont-text">
+                                            <p class="table-type-2-precio-total">Precio total</p>
+                                            <p class="table-type-2-precio-unitario">Precio Unitario</p>
+                                        </div>
+                                    </td>
+
+                                    <!-- Opciones -->
+                                    <td class="table-type-2-body-td ">
+                                        <div class="table-type-2-cont-opcion">
+                                            <div class="table-type-2-cont-opcion-reed">
+                                            <div class="table-type-2-cont-opcion-delete">
+                                                <div class="table-type-2-opcions-delete"><span class="material-icons">delete</span></div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="table-type-2-body-tr">
+
+                                    <!-- img-name-catalogo de producto -->
+                                    <td class="table-type-2-body-td">
+                                        <div class="table-type-2-cont-producto">
+                                            <img class="table-type-2-producto-img" src="Imagenes/Condensador.jpg" alt="...">
+                                            <div class="table-type-2-productos-cont-text">
+                                                <p class="table-type-2-producto-name">Name producto</p>
+                                                <p class="table-type-2-producto-catalogo">Catalogo</p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <!-- cantidad -->
+                                    <td class="table-type-2-body-td">
+                                        <div class="table-type-2-cantidad">
+                                            10
+                                        </div>
+                                    </td>
+
+                                    <!-- precio -->
+                                    <td class="table-type-2-body-td">
+                                        <div class="table-type-2-precio-cont-text">
+                                            <p class="table-type-2-precio-total">Precio total</p>
+                                            <p class="table-type-2-precio-unitario">Precio Unitario</p>
+                                        </div>
+                                    </td>
+
+                                    <!-- Opciones -->
+                                    <td class="table-type-2-body-td ">
+                                        <div class="table-type-2-cont-opcion">
+                                            <div class="table-type-2-cont-opcion-reed">
+                                            <div class="table-type-2-cont-opcion-delete">
+                                                <div class="table-type-2-opcions-delete"><span class="material-icons">delete</span></div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="table-type-2-body-tr">
+
+                                    <!-- img-name-catalogo de producto -->
+                                    <td class="table-type-2-body-td">
+                                        <div class="table-type-2-cont-producto">
+                                            <img class="table-type-2-producto-img" src="Imagenes/Condensador.jpg" alt="...">
+                                            <div class="table-type-2-productos-cont-text">
+                                                <p class="table-type-2-producto-name">Name producto</p>
+                                                <p class="table-type-2-producto-catalogo">Catalogo</p>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <!-- cantidad -->
+                                    <td class="table-type-2-body-td">
+                                        <div class="table-type-2-cantidad">
+                                            10
+                                        </div>
+                                    </td>
+
+                                    <!-- precio -->
+                                    <td class="table-type-2-body-td">
+                                        <div class="table-type-2-precio-cont-text">
+                                            <p class="table-type-2-precio-total">Precio total</p>
+                                            <p class="table-type-2-precio-unitario">Precio Unitario</p>
+                                        </div>
+                                    </td>
+
+                                    <!-- Opciones -->
+                                    <td class="table-type-2-body-td ">
+                                        <div class="table-type-2-cont-opcion">
+                                            <div class="table-type-2-cont-opcion-reed">
+                                            <div class="table-type-2-cont-opcion-delete">
+                                                <div class="table-type-2-opcions-delete"><span class="material-icons">delete</span></div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <tr class="table-type-2-body-tr">
+
+                                        <!-- img-name-catalogo de producto -->
+                                        <td class="table-type-2-body-td">
+                                            <div class="table-type-2-cont-producto">
+                                                <img class="table-type-2-producto-img" src="Imagenes/Condensador.jpg" alt="...">
+                                                <div class="table-type-2-productos-cont-text">
+                                                    <p class="table-type-2-producto-name">Name producto</p>
+                                                    <p class="table-type-2-producto-catalogo">Catalogo</p>
+                                                </div>
+                                            </div>
+                                        </td>
+        
+                                        <!-- cantidad -->
+                                        <td class="table-type-2-body-td">
+                                            <div class="table-type-2-cantidad">
+                                                10
+                                            </div>
+                                        </td>
+        
+                                        <!-- precio -->
+                                        <td class="table-type-2-body-td">
+                                            <div class="table-type-2-precio-cont-text">
+                                                <p class="table-type-2-precio-total">Precio total</p>
+                                                <p class="table-type-2-precio-unitario">Precio Unitario</p>
+                                            </div>
+                                        </td>
+        
+                                        <!-- Opciones -->
+                                        <td class="table-type-2-body-td ">
+                                            <div class="table-type-2-cont-opcion">
+                                                <div class="table-type-2-cont-opcion-reed">
+                                                <div class="table-type-2-cont-opcion-delete">
+                                                    <div class="table-type-2-opcions-delete"><span class="material-icons">delete</span></div>
+                                                </div>
+                                            </div>
+                                        </td>
+        
+                                    </tr>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn btn-aceptar">Aceptar</a>
+                <a href="#" class="btn btn-cancelar">Cancelar</a>
+            </div>
+        </div>
+        <aside>
+    </div>
+</body>
+</html>
